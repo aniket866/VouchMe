@@ -84,13 +84,7 @@ const Navbar = ({
         </div>
       </nav>
 
-      {/* BACKDROP */}
-      {open && (
-        <div
-          className="fixed inset-0 z-40 bg-black/60 md:hidden"
-          onClick={() => setOpen(false)}
-        />
-      )}
+      {/* No separate backdrop needed: the menu is full-screen and already covers the viewport */}
 
       {/* FULL-SCREEN MENU */}
       {open && (
